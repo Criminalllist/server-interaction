@@ -43,6 +43,7 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.3",
     "the-new-css-reset": "^1.11.3"
   }
 }

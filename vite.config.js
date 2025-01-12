@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
   publicDir: 'public',
@@ -26,10 +25,5 @@ export default defineConfig({
     },
     minify: 'esbuild',
   },
-  plugins: [
-    eslint({
-      cache: false,
-      fix: true,
-    }),
-  ],
+  plugins: [],
 });

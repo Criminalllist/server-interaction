@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Как обратиться к серверу?",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "Как получить ответ от сервера?",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "Как отправить данные на сервер?",
+      "views": 0
+    },
+
+    {
+      "id": "5",
+      "title": "Новый пост 2",
+      "views": 0
+    },
+    {
+      "id": "6",
+      "title": "Пост о посте",
+      "views": 0
+    },
+    {
+      "id": "7",
+      "title": "пост ",
+      "views": 0
+    },
+    {
+      "id": "8",
+      "title": "пост 8",
+      "views": 0
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

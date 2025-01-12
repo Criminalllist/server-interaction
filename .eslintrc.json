@@ -12,17 +12,14 @@
     "plugin:prettier/recommended",
     "eslint-config-prettier"
   ],
-  "plugins": [
-    "import",
-    "prettier"
-  ],
+  "plugins": ["import", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "rules": {
     "prettier/prettier": "error",
-    "no-console": "error",
+    "no-console": "false",
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -34,15 +31,9 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js"
-        ],
-        "path": [
-          "src"
-        ],
-        "moduleDirectory": [
-          "node_modules"
-        ]
+        "extensions": [".js"],
+        "path": ["src"],
+        "moduleDirectory": ["node_modules"]
       }
     }
   }

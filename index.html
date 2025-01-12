@@ -4,11 +4,53 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite.js Vanilla Template</title>
+    <script type="module" src="/src/js/main.js" defer></script>
+    <title>Server interaction</title>
   </head>
 
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
+    <main>
+      <h1>Клиент-серверное взаимодейтсвие</h1>
+
+      <form class="create-post-form" data-js-create-form>
+        <h2>Создание поста</h2>
+
+        <p>
+          <label for="new-post-title">Заголовок поста:</label>
+          <input id="new-post-title" name="title" />
+        </p>
+
+        <p>
+          <label for="new-post-id">Идентификатор поста</label>
+          <input id="new-post-id" name="id" type="number" />
+        </p>
+
+        <button type="submit">Сохранить пост на сервер</button>
+      </form>
+
+      <form class="load-post-form" data-js-get-form>
+        <h2>Поиск поста по ID</h2>
+
+        <p>
+          <label for="post-id">Идентификатор поста</label>
+          <input id="post-id" type="number" value="1" data-js-id-field />
+        </p>
+
+        <button type="submit">Получить пост с сервера</button>
+      </form>
+
+      <form class="search-post-form" data-js-search-form>
+        <h2>Поиск постов</h2>
+
+        <p>
+          <label for="views-count">Минимум просмотров</label>
+          <input id="views-count" type="number" data-js-search-field />
+        </p>
+
+        <button type="submit">Получить пост с сервера</button>
+      </form>
+
+      <div class="result" data-js-result></div>
+    </main>
   </body>
 </html>
